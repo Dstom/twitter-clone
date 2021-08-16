@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from '../Components/Header'
-import TwitterProfile from '../Components/TwitterProfile'
+import ProfileCard from '../Components/ProfileCard'
 
 export default function Home() {
   return (
@@ -10,12 +10,14 @@ export default function Home() {
 
       <div className="w-full">
 
-        <img src="/images/testBanner.png" alt="banner" />
+        <img 
+        className="w-full h-40 md:h-72 object-cover object-center-bottom"
+        src="/images/testBanner.png" alt="banner" />
 
       </div>
-      { /* TWITTER PROFILE*/}
+      { /*PROFILE CARd*/}
 
-      <TwitterProfile />
+      <ProfileCard />
       {/* SIDEBAR */}
 
 
