@@ -1,6 +1,6 @@
 const Sidebar = () => {
     return (
-        <div className="bg-white shadow w-full max-w-[345px] mx-auto p-4 mb-4">
+        <div className="bg-white shadow w-full max-w-[345px] p-4 mb-4">
             <ul>
                 <li className="py-1 pl-1 text-sm leading-normal text-gray-600">
                     Tweets

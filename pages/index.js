@@ -18,12 +18,15 @@ export default function Home() {
 
       </div>
       { /*PROFILE CARd*/}
-
       <ProfileCard />
+      <div className="flex flex-col md:flex-row md:max-w-5xl mx-auto">
+        <Sidebar />
+        <TwitterCard />
+      </div>
+
       {/* SIDEBAR */}
 
-      <Sidebar />
-      <TwitterCard />
+
 
 
 

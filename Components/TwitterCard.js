@@ -3,7 +3,7 @@ import { ChatAltIcon, HeartIcon, BookmarkIcon, RefreshIcon, PhotographIcon } fro
 
 const TwitterCard = () => {
     return (
-        <div className="bg-white max-w-[345px] w-full mx-auto p-4 shadow">
+        <div className="bg-white max-w-[345px] w-full p-4 shadow md:flex-grow">
             <div className="flex items-center gap-4 mb-3">
                 <img src="/images/profileTwitterCard.jpg" className="w-10 h-10 rounded" />
                 <div>
