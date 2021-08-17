@@ -3,7 +3,7 @@ import { ChatAltIcon, HeartIcon, BookmarkIcon, RefreshIcon, PhotographIcon } fro
 
 const TwitterCard = () => {
     return (
-        <div className="bg-white max-w-[345px] w-full p-4 shadow md:flex-grow">
+        <div className="bg-white max-w-[345px] mx-auto sm:m-0 sm:max-w-full w-full p-4 shadow ">
             <div className="flex items-center gap-4 mb-3">
                 <img src="/images/profileTwitterCard.jpg" className="w-10 h-10 rounded" />
                 <div>
@@ -25,29 +25,33 @@ const TwitterCard = () => {
             </div>
 
             <div className="border-t border-b border-gray-200 flex items-center justify-evenly text-gray-700 mb-3">
-                <div className="py-3 px-5 rounded hover:bg-gray-200">
+                <div className="py-3 px-5 rounded hover:bg-gray-200 flex items-center gap-1 flex-grow">
                     <ChatAltIcon className="h-4 w-4" />
+                    <span className="hidden md:inline-block">Comment</span>
                 </div>
 
-                <div className="py-3 px-5 rounded hover:bg-gray-200">
+                <div className="py-3 px-5 rounded hover:bg-gray-200 flex items-center gap-1 flex-grow">
                     <RefreshIcon className="h-4 w-4" />
+                    <span className="hidden md:inline-block">Retweet</span>
                 </div>
 
-                <div className="py-3 px-5 rounded hover:bg-gray-200">
+                <div className="py-3 px-5 rounded hover:bg-gray-200 flex items-center gap-1 flex-grow">
                     <HeartIcon className="h-4 w-4" />
+                    <span className="hidden md:inline-block">Like</span>
                 </div>
 
-                <div className="py-3 px-5 rounded hover:bg-gray-200">
+                <div className="py-3 px-5 rounded hover:bg-gray-200 flex items-center gap-1 flex-grow">
                     <BookmarkIcon className="h-4 w-4" />
+                    <span className="hidden md:inline-block">Save</span>
                 </div>
             </div>
 
             <div className="flex items-center gap-4">
                 <img src="/images/chatProfile.jpg" className="h-10 w-10 rounded" />
                 <div className="relative w-full">
-                    <PhotographIcon className="h-4 w-4 absolute right-0"/>
+                    <PhotographIcon className="h-4 w-4 absolute right-2 top-1/2 transform -translate-y-1/2" />
                     <input placeholder="Tweet your reply"
-                     className="w-full bg-gray-100 h-full p-2 rounded"/>
+                        className="w-full bg-gray-100 opacity-70 h-full p-2 rounded pr-6" />
                 </div>
             </div>
         </div>

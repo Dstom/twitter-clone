@@ -19,9 +19,13 @@ export default function Home() {
       </div>
       { /*PROFILE CARd*/}
       <ProfileCard />
-      <div className="flex flex-col md:flex-row md:max-w-5xl mx-auto">
+      <div className="flex flex-col md:flex-row md:max-w-[90%] lg:max-w-5xl mx-auto gap-4">
         <Sidebar />
-        <TwitterCard />
+        <div>
+          <TwitterCard />
+          <TwitterCard />
+        </div>
+
       </div>
 
       {/* SIDEBAR */}
